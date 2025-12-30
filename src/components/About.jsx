@@ -11,7 +11,7 @@ function About() {
       <div className="about__container">
         <div className="about__profile">
           <TiltedCard
-            imageSrc="/Yamilet.jpeg"
+            imageSrc="Yamilet.jpeg"
             altText="Yamilet Caituiro"
             containerHeight="500px"
             containerWidth="100%"

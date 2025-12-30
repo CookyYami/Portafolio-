@@ -62,7 +62,7 @@ function Home() {
             </a>
             <a
               className="home__btn home__btn--secondary"
-              href="/cvYamilet.pdf"
+              href="cvYamilet.pdf"
               download
             >
               Descargar CV

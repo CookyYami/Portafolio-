@@ -17,9 +17,6 @@ function Certifications() {
 						<div className="cert-card__badge">✓</div>
 						<h3>{cert}</h3>
 						<p>Programa Cisco Networking Academy</p>
-						<a className="cert-card__btn" href="#" target="_blank" rel="noopener noreferrer">
-							Ver certificado
-						</a>
 					</article>
 				))}
 			</div>

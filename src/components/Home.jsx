@@ -60,7 +60,11 @@ function Home() {
                 <path fillRule="evenodd" d="M10 3a1 1 0 011 1v10.586l2.293-2.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V4a1 1 0 011-1z" clipRule="evenodd" />
               </svg>
             </a>
-            <a className="home__btn home__btn--secondary" href="/cv.pdf" download>
+            <a
+              className="home__btn home__btn--secondary"
+              href="/cvYamilet.pdf"
+              download
+            >
               Descargar CV
             </a>
           </div>

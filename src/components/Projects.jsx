@@ -51,7 +51,7 @@ function Projects() {
 						</p>
 						<a 
 							className="project-card__btn" 
-							href="https://github.com/yamiletc" 
+							href="https://github.com/CookyYami/Portafolio-" 
 							target="_blank" 
 							rel="noopener noreferrer"
 						>
@@ -86,8 +86,28 @@ function Projects() {
 						</a>
 					</article>
 					<article className="project-card">
-						<h3>Proyecto 3</h3>
-						<p>Formulario accesible con validaciones y mensajes de ayuda.</p>
+						<div className="project-card__header">
+							<h3>Sistema de Reservas SPA</h3>
+							<div className="project-card__tags">
+								<span className="tag">Java</span>
+								<span className="tag">POO</span>
+								<span className="tag">GUI (NetBeans)</span>
+							</div>
+						</div>
+						<p className="project-card__description">
+							Sistema de reservas para un spa, construido en Java con POO y GUI en NetBeans. Permite gestionar clientes, servicios y reservas con interacción visual.
+						</p>
+						<a 
+							className="project-card__btn" 
+							href="https://github.com/CookyYami/gestion-de-reservas-de-spa" 
+							target="_blank" 
+							rel="noopener noreferrer"
+						>
+							Ver repositorio
+							<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+								<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+							</svg>
+						</a>
 					</article>
 				</div>
 			)}

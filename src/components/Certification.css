@@ -1,0 +1,105 @@
+.certifications {
+	background: transparent;
+	color: #0f172a;
+	animation-duration: 0.9s;
+	text-align: center;
+}
+
+
+
+.certifications__grid {
+	margin-top: 22px;
+	display: grid;
+	grid-template-columns: repeat(2, minmax(240px, 1fr));
+	gap: 14px;
+}
+
+@media (max-width: 840px) {
+	.certifications__grid {
+		grid-template-columns: repeat(2, minmax(200px, 1fr));
+	}
+}
+
+@media (max-width: 560px) {
+	.certifications__grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.cert-card {
+	background: #ffffff;
+	border: 2px solid #dff3e6;
+	border-radius: 16px;
+	padding: 14px 14px;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+	color: #0f172a;
+	animation: floatUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) both;
+	animation-play-state: paused;
+	transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.cert-card:hover {
+	transform: translateY(-10px) rotateX(3deg) rotateY(-3deg) scale(1.02);
+	box-shadow: 0 20px 36px rgba(0, 0, 0, 0.14);
+	border-color: var(--verde-4);
+}
+
+.cert-card__badge {
+	width: 32px;
+	height: 32px;
+	border-radius: 9px;
+	background: var(--verde-6);
+	color: white;
+	display: grid;
+	place-items: center;
+	font-weight: 800;
+	margin-bottom: 8px;
+}
+
+.cert-card h3 {
+	margin: 0 0 4px;
+	color: #0f172a;
+	font-size: 1rem;
+}
+
+.cert-card p {
+	margin: 0;
+	color: #475569;
+	font-weight: 600;
+	font-size: 0.92rem;
+}
+
+.cert-card__btn {
+	margin-top: 12px;
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 9px 14px;
+	border-radius: 10px;
+	background: var(--verde-6);
+	color: white;
+	text-decoration: none;
+	font-weight: 700;
+	transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.cert-card__btn:hover {
+	background: #1a7a3e;
+	transform: translateY(-2px);
+	box-shadow: 0 10px 18px rgba(0, 0, 0, 0.12);
+}
+
+.certifications.is-visible .cert-card {
+	animation-play-state: running;
+}
+
+@keyframes floatUp {
+	from {
+		opacity: 0;
+		transform: translateY(18px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

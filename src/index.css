@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+:root {
+  --verde-1: #f0fdf4;
+  --verde-2: #dcfce7;
+  --verde-3: #bbf7d0;
+  --verde-4: #86efac;
+  --verde-5: #4ade80;
+  --verde-6: #166534;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  background: white;
+  color: #0f172a;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.seccion {
+  min-height: auto;
+  padding: 80px 60px;
+}
+
+@media (max-width: 900px) {
+  .seccion {
+    padding: 64px 36px;
+  }
+}
+
+@media (max-width: 640px) {
+  .seccion {
+    padding: 56px 24px;
+  }
+}
+
+
+.seccion h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--verde-6);
+}
+
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  line-height: 1.65;
+}
+
+.seccion,
+.seccion * {
+  animation-play-state: paused;
+}
+
+.seccion.is-visible,
+.seccion.is-visible * {
+  animation-play-state: running;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
